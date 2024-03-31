@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news</title>
+        <link rel="stylesheet" href="static/css/file.css">
+</head>
+<body align="center">
+<h1><u><i>{{msg}}</i></u></h1>
+<ul>
+    <li><h5>{{msg1}}</h5></li>
+    <li><h5>{{msg2}}</h5></li>
+    <li><h5>{{msg3}}</h5></li>
+</ul>
+{% if type == 'movies' %}
+    <img src="{% static 'images/lovestory.jpg'%}" alt="Upload soon!!!">
+    <img src="{% static 'images/fidamovie.jpg'%}" alt="Upload soon!!!">
+    <img src="{% static 'images/shyamsingoroy.jpg'%}" alt="Upload soon!!!">
+{% elif type == 'sports' %}
+    <img src="{% static 'images/kabaddi.jpg'%}" alt="Upload soon!!!">
+    <img src="{% static 'images/criket.jpg'%}" alt="Upload soon!!!">
+    <img src="{% static 'images/vollybol.jpg'%}" alt="Upload soon!!!">
+{% elif type == 'politics' %}
+    <img src="{% static 'images/politics1.jpg'%}" alt="Upload soon!!!">
+    <img src="{% static 'images/politics2.jpg'%}" alt="Upload soon!!!">
+    <img src="{% static 'images/politics3.png'%}" alt="Upload soon!!!">
+{% endif %}
+</body>
+</html>

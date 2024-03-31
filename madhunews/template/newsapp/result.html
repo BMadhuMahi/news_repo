@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/css/file.css">
+
+</head>
+<body align="center">
+<h1><marquee><u><i>{{head}}</i></u></marquee></h1>
+<img src="{% static 'images/newsphoto.jpg'%}" alt="Upload soon!!!">
+<ul>
+    <li><a href="movies">Movies Information</a></li>
+    <li><a href="sports">Sports Information</a></li>
+    <li><a href="politics">Politics Information</a></li>
+</ul>
+</body>
+</html>
